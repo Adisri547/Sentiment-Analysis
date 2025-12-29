@@ -54,13 +54,13 @@ if analyze_btn and user_input:
     # Custom display based on result
     if prediction == "Positive":
         st.balloons()
-        st.success(f"### Result: {prediction} 😊")
+        st.success(f"### Result: {prediction} ")
     elif prediction == "Negative":
-        st.error(f"### Result: {prediction} 😡")
+        st.error(f"### Result: {prediction} ")
     elif prediction == "Neutral":
-        st.warning(f"### Result: {prediction} 😐")
+        st.warning(f"### Result: {prediction} ")
     else:
-        st.info(f"### Result: {prediction} 🔍")
+        st.info(f"### Result: {prediction} ")
 
     # Show confidence level
     st.write(f"**Confidence Score:** {max_prob:.2f}%")
