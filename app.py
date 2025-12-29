@@ -3,7 +3,7 @@ import joblib
 import re
 
 # Set Page Config (This adds a favicon and browser title)
-st.set_page_config(page_title="FanPulse AI", page_icon="📊", layout="centered")
+st.set_page_config(page_title="FanPulse AI", layout="centered")
 
 # Load model and vectorizer
 @st.cache_resource # This keeps the model in memory so it doesn't reload on every click
@@ -27,7 +27,7 @@ with st.sidebar:
     st.write("Developed by: Aditya Srivastav")
 
 # --- Main UI ---
-st.title("📊 FanPulse Sentiment AI")
+st.title("FanPulse Sentiment AI")
 st.markdown("Predict the emotional tone of your fan base in real-time.")
 
 # User Input Section
@@ -37,7 +37,7 @@ with st.container():
     
     col1, col2, col3 = st.columns([1,1,1])
     with col2:
-        analyze_btn = st.button("🚀 Analyze Sentiment", use_container_width=True)
+        analyze_btn = st.button(" Analyze Sentiment", use_container_width=True)
 
 # --- Results Section ---
 if analyze_btn and user_input:
