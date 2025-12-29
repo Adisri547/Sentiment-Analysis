@@ -24,7 +24,7 @@ with st.sidebar:
     st.title("Settings")
     st.info("This AI analyzes fan sentiment based on Twitter gaming data.")
     st.markdown("---")
-    st.write("Developed by: [Your Name]")
+    st.write("Developed by: Aditya Srivastav")
 
 # --- Main UI ---
 st.title("📊 FanPulse Sentiment AI")
